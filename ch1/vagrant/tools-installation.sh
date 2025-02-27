@@ -1,6 +1,6 @@
 #!/bin/bash -ex
 
-apt-get install -y tcpdump net-tools
+apt-get install -y tcpdump net-tools htop
 
 curl -L -o go1.24.0.linux-amd64.tar.gz https://go.dev/dl/go1.24.0.linux-amd64.tar.gz
 
