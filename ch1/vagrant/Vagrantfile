@@ -2,7 +2,7 @@ ENV['VAGRANT_DEFAULT_PROVIDER'] = 'libvirt'
 Vagrant.configure("2") do |config|
   config.vm.box = "generic/debian12"
   config.vm.box_version = "4.3.12"
-  config.vm.network "public_network", use_dhcp_assigned_default_route: true
-  config.vm.provision "shell", path: "golang-install.sh"
+#  config.vm.network "public_network", use_dhcp_assigned_default_route: true
+  config.vm.provision "shell", path: "tools-installation.sh"
   config.vm.provision "file", source: "../web-server.go", destination: "web-server.go"
 end
